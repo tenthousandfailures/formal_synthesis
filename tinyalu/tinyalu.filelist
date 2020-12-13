@@ -1,0 +1,4 @@
+tinyalu/tinyalu_typedef.sv
+tinyalu/tinyalu.sv
+tinyalu/tinyalu_top.sv
+tinyalu/tinyalu_sva.sv

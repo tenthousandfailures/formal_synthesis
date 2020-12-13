@@ -1,0 +1,16 @@
+# The Compilation Unit Definition (CUD) is where files and folders that make the compilation unit are specified.
+# The following can be specified directly (without any flags):
+#    Verilog source files
+#    Other CUD files (this allows hierarchical structures)
+#    Folders (results in all of its member Verilog source files being added to the compilation unit)
+# Paths can be relative to project roots, relative to the working directory, or absolute.
+# Each path or command, should be in a separate line.
+# For content assistance which shows all available flags, type '-' in a new line outside the commented area, and press CTRL+SPACE.
+
+-f tinyalu/tinyalu.filelist
+
+-ruleset ignore_all tinyalu/tinyalu_sva.sv
+-ruleset testbench tinyalu/tinyalu_top.sv
+
+-scope_property -top top
+-scope_property -top_synth tinyalu
